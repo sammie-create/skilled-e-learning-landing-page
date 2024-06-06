@@ -1,0 +1,409 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Paytone+One&display=swap");
+
+:root {
+  font-size: 62.5%;
+  --logo-text: "Paytone One", sans-serif;
+  --text-font: "Figtree", sans-serif;
+  --first-grad-color: hsl(10, 99%, 65%);
+  --sec-grad-color: hsl(336, 89%, 60%);
+  --third-grad-color: hsl(318, 76%, 53%);
+  --fourth-grad-color: hsl(333, 87%, 59%);
+  --fifth-grad-color: hsl(289, 56%, 50%);
+  --dark-blue: hsl(233, 53%, 16%);
+  --links-color: rgb(248, 117, 167);
+  --font-color: hsl(249, 3%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 42rem;
+  font-family: var(--text-font);
+  font-size: 1.5rem;
+}
+
+#header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+}
+
+#header-nav a,
+#header-nav button {
+  display: inline-block;
+}
+
+#header-nav a {
+  color: var(--dark-blue);
+  font-family: var(--logo-text);
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+#header-nav button {
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--white);
+  background: var(--dark-blue);
+  padding: 1rem 1.5rem;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+#first-section {
+  margin-bottom: 5rem;
+  padding: 2rem 2rem;
+}
+
+.hero-text {
+  margin-bottom: 5rem;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--dark-blue);
+  margin-bottom: 2rem;
+}
+
+.hero-text p {
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--font-color);
+  margin-bottom: 2.5rem;
+}
+
+.hero-text button {
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  border: none;
+  font-weight: 600;
+  font-family: var(--text-font);
+  font-size: 1.5rem;
+  color: var(--white);
+  background-image: linear-gradient(
+    var(--first-grad-color),
+    var(--third-grad-color)
+  );
+  cursor: pointer;
+}
+
+.hero-image img {
+  max-width: 40rem;
+  min-width: 30rem;
+}
+
+.hero-image {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  background: url(./images/image-woman.png) center bottom no-repeat,
+    linear-gradient(var(--first-grad-color), var(--third-grad-color));
+  background-size: 20rem;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+.members {
+  background: var(--white);
+  text-align: center;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.137);
+  position: absolute;
+  right: -2rem;
+}
+
+.course-hours {
+  background: var(--white);
+  width: fit-content;
+  padding: 2rem 3rem 1rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2rem 2.5rem hsl(233, 35%, 90%);
+  position: absolute;
+  bottom: -2rem;
+  left: -1rem;
+}
+
+.members small,
+.course-hours small {
+  color: var(--font-color);
+  font-weight: 800;
+}
+
+.members p,
+.course-hours p {
+  color: var(--dark-blue);
+  font-weight: 800;
+  font-size: 2.5rem;
+  padding-top: 0.5rem;
+}
+
+#second-section {
+  padding: 0 2rem;
+  margin-bottom: 8rem;
+}
+#second-section > h1 {
+  padding: 2rem;
+  color: var(--white);
+  background-image: linear-gradient(
+    var(--first-grad-color),
+    var(--fourth-grad-color)
+  );
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+legend {
+  width: 3rem;
+  height: 3rem;
+  padding: 2.3rem;
+  margin-left: 1rem;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    var(--first-grad-color),
+    var(--third-grad-color)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+legend img {
+  width: 2rem;
+}
+
+fieldset {
+  background: var(--white);
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 2.5rem hsl(233, 35%, 90%);
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--font-color);
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+fieldset h4 {
+  color: var(--dark-blue);
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin-bottom: 1.3rem;
+}
+
+fieldset p {
+  margin-bottom: 2rem;
+}
+
+fieldset a {
+  color: var(--links-color);
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#footer-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 2rem;
+  background: var(--dark-blue);
+}
+
+#footer-nav a,
+#footer-nav button {
+  display: inline-block;
+}
+
+#footer-nav a {
+  color: var(--white);
+  font-family: var(--logo-text);
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+#footer-nav button {
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--white);
+  background-image: linear-gradient(
+    var(--fifth-grad-color) 60%,
+    var(--third-grad-color)
+  );
+  padding: 1rem 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 1.3rem;
+  font-family: var(--text-font);
+  color: var(--font-color);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--links-color);
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 375px) {
+  #header-nav a,
+  #footer-nav a {
+    font-size: 3rem;
+  }
+  #header-nav button,
+  #footer-nav button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+  .hero-text h1 {
+    font-size: 4.2rem;
+  }
+  .hero-image {
+    width: 27rem;
+    height: 27rem;
+    background-size: 25rem;
+  }
+  .members {
+    padding: 1.5rem;
+  }
+  .course-hours {
+    padding: 2rem 4rem 1rem 1.5rem;
+  }
+  fieldset h4 {
+    font-size: 2rem;
+  }
+  fieldset {
+    font-size: 1.5rem;
+  }
+  fieldset a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 82rem;
+  }
+  #first-section {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 6rem;
+  }
+  .hero-text {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  .hero-text h1 {
+    font-size: 4.5rem;
+  }
+  .hero-text p {
+    font-size: 1.6rem;
+  }
+  .hero-image {
+    width: 22rem;
+    height: 30rem;
+    border-radius: 10rem;
+    padding: 0 5rem;
+  }
+  .members {
+    right: -4rem;
+  }
+  .course-hours {
+    bottom: -3rem;
+    left: -3rem;
+  }
+  #second-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5rem 2rem;
+  }
+  #second-section > h1 {
+    height: 30rem;
+    padding: 4rem;
+    font-size: 3rem;
+  }
+  fieldset {
+    padding: 2rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  fieldset h4 {
+    margin-bottom: 0;
+  }
+  fieldset p {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    max-width: 100%;
+  }
+  #header-nav {
+    padding: 2rem 12rem;
+  }
+  #first-section {
+    padding: 2rem 12rem;
+  }
+  .hero-text {
+    padding: 3rem 7rem 0 0;
+  }
+  .hero-image {
+    height: 38rem;
+    background-size: 30rem;
+  }
+  .hero-text h1 {
+    font-size: 5.5rem;
+  }
+  .hero-text p {
+    font-size: 2rem;
+  }
+  #second-section {
+    padding: 2rem 12rem;
+    grid-template-columns: auto auto auto;
+  }
+  fieldset {
+    padding-top: 0;
+  }
+  fieldset p {
+    line-height: 1.5;
+  }
+  #footer-nav {
+    padding: 5rem 12rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #first-section {
+    justify-content: space-between;
+  }
+  .hero-text h1 {
+    font-size: 6rem;
+  }
+  .hero-text h1,
+  .hero-text p {
+    width: 60rem;
+  }
+}
